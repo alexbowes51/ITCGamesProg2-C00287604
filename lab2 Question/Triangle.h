@@ -9,21 +9,26 @@ public:
     Triangle() = default;
     Triangle(float t_base, float t_height) : m_base(t_base), m_height(t_height)
     {}
-    
+
 
     float hypot()
     {
-        
+        float result;
+
+        result = sqrt(m_height * m_height + m_base * m_base);
 
 
 
-        return 0.0f;
+        return result;
     }
 
     float area()
     {
+        float result;
 
-        return 0.0f;
+        result = (m_height * m_base) / 2;
+
+        return result;
     }
 
 
